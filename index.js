@@ -41,10 +41,9 @@ Aşağıdakileri yapmak için aşağıdaki kopyalama işlevini kullanın:
 
 
 function kopyala(arr){
-  arr = orijinalTatlar;
-  return arr;
+  return arr.slice(0)
 }
-console.log("kopyalandı: ",kopyala())
+console.log("kopyalandı: ",kopyala(orijinalTatlar))
 
 /* Görev 2:
 Bir dizinin tam olarak 25 çeşit olduğunu onaylayın. İşleviniz şunları kabul etmelidir:
@@ -181,10 +180,12 @@ function ismeGoreFiltrele(arr,filtre){
     }
     
   }
-  console.log(yeniDizi)
+  return yeniDizi;
   
 }
-ismeGoreFiltrele(orijinalTatlar,"Çikolata")
+
+console.log(ismeGoreFiltrele(orijinalTatlar,"Çikolata"))
+
 
 
 
